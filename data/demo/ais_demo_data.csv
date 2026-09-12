@@ -1,0 +1,13 @@
+vessel_id,vessel_name,vessel_type,timestamp_utc,latitude,longitude,speed_knots,ais_gap_flag
+DEMO-001,MV Ocean Guardian,Tanker,2026-09-06T06:00:00Z,18.43,72.35,11.2,False
+DEMO-001,MV Ocean Guardian,Tanker,2026-09-06T08:00:00Z,18.416,72.3445,4.1,True
+DEMO-001,MV Ocean Guardian,Tanker,2026-09-06T12:00:00Z,18.395,72.33,10.8,False
+DEMO-002,MV Blue Horizon,Cargo,2026-09-06T06:00:00Z,18.67,72.48,12.5,False
+DEMO-002,MV Blue Horizon,Cargo,2026-09-06T09:00:00Z,18.645,72.46,12.3,False
+DEMO-002,MV Blue Horizon,Cargo,2026-09-06T12:00:00Z,18.62,72.44,12.1,False
+DEMO-003,Sea Pearl,Fishing,2026-09-06T06:00:00Z,18.535,72.15,7.4,False
+DEMO-003,Sea Pearl,Fishing,2026-09-06T09:00:00Z,18.517,72.135,7.1,False
+DEMO-003,Sea Pearl,Fishing,2026-09-06T12:00:00Z,18.5,72.12,6.8,False
+DEMO-004,Coastal Trader,Cargo,2026-09-06T06:00:00Z,18.57,72.36,10.0,False
+DEMO-004,Coastal Trader,Cargo,2026-09-06T09:00:00Z,18.58,72.375,9.9,False
+DEMO-004,Coastal Trader,Cargo,2026-09-06T12:00:00Z,18.59,72.39,9.8,False

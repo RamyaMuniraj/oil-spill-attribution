@@ -1,0 +1,6 @@
+candidate_id,vessel_id,vessel_name,suspicion_score
+C01,DEMO-002,MV Blue Horizon,78
+C02,DEMO-001,MV Ocean Guardian,68
+C03,DEMO-003,Sea Pearl,75
+C04,DEMO-001,MV Ocean Guardian,100
+C05,DEMO-001,MV Ocean Guardian,97

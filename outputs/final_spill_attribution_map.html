@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7997b550015363a7ff70eb2dce03d778 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7997b550015363a7ff70eb2dce03d778" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7997b550015363a7ff70eb2dce03d778 = L.map(
+                "map_7997b550015363a7ff70eb2dce03d778",
+                {
+                    center: [18.4948336, 72.31636499999999],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3d1007ff670e090d0bf0bc7dc7482f05 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3d1007ff670e090d0bf0bc7dc7482f05.addTo(map_7997b550015363a7ff70eb2dce03d778);
+        
+    
+            var circle_marker_d26df7fc802a9f8a927875a87a9b71b4 = L.circleMarker(
+                [18.414997, 72.343927],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_7997b550015363a7ff70eb2dce03d778);
+        
+    
+        var popup_47c815f1f781b7e9f5985231705e3b94 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_f1255740e918c63f4cb7a56c9c8a4d32 = $(`<div id="html_f1255740e918c63f4cb7a56c9c8a4d32" style="width: 100.0%; height: 100.0%;"><b>Observed slick candidate: C04</b><br>Top ranked vessel: MV Ocean Guardian<br>Suspicion score: 100/100<br>Evidence: closest AIS point is 0.13 km away; vessel type: Tanker; AIS gap/anomaly flagged</div>`)[0];
+                popup_47c815f1f781b7e9f5985231705e3b94.setContent(html_f1255740e918c63f4cb7a56c9c8a4d32);
+            
+        
+
+        circle_marker_d26df7fc802a9f8a927875a87a9b71b4.bindPopup(popup_47c815f1f781b7e9f5985231705e3b94)
+        ;
+
+        
+    
+    
+            circle_marker_d26df7fc802a9f8a927875a87a9b71b4.bindTooltip(
+                `<div>
+                     Observed candidate C04
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5cdcc2ca082418c0c1fceb1a64f887d3 = L.circleMarker(
+                [18.634411, 72.45199],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_7997b550015363a7ff70eb2dce03d778);
+        
+    
+        var popup_c258c4ae6e4a6ebc28b7472fec988538 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_b2be49fb88747f958f13896adfbd1637 = $(`<div id="html_b2be49fb88747f958f13896adfbd1637" style="width: 100.0%; height: 100.0%;"><b>Observed slick candidate: C01</b><br>Top ranked vessel: MV Blue Horizon<br>Suspicion score: 64/100<br>Evidence: closest AIS point is 2.04 km away; vessel type: Cargo</div>`)[0];
+                popup_c258c4ae6e4a6ebc28b7472fec988538.setContent(html_b2be49fb88747f958f13896adfbd1637);
+            
+        
+
+        circle_marker_5cdcc2ca082418c0c1fceb1a64f887d3.bindPopup(popup_c258c4ae6e4a6ebc28b7472fec988538)
+        ;
+
+        
+    
+    
+            circle_marker_5cdcc2ca082418c0c1fceb1a64f887d3.bindTooltip(
+                `<div>
+                     Observed candidate C01
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7d60765e9833ab48c82ebbb880083e40 = L.circleMarker(
+                [18.403867, 72.356413],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_7997b550015363a7ff70eb2dce03d778);
+        
+    
+        var popup_58648f24a7f182b6d21b62e6ed9ad38a = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_145412145dda58b33976156cba68511c = $(`<div id="html_145412145dda58b33976156cba68511c" style="width: 100.0%; height: 100.0%;"><b>Observed slick candidate: C05</b><br>Top ranked vessel: MV Ocean Guardian<br>Suspicion score: 96/100<br>Evidence: closest AIS point is 1.84 km away; vessel type: Tanker; AIS gap/anomaly flagged</div>`)[0];
+                popup_58648f24a7f182b6d21b62e6ed9ad38a.setContent(html_145412145dda58b33976156cba68511c);
+            
+        
+
+        circle_marker_7d60765e9833ab48c82ebbb880083e40.bindPopup(popup_58648f24a7f182b6d21b62e6ed9ad38a)
+        ;
+
+        
+    
+    
+            circle_marker_7d60765e9833ab48c82ebbb880083e40.bindTooltip(
+                `<div>
+                     Observed candidate C05
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e690eaf242b5eddbc2ff67b622cfdb12 = L.circleMarker(
+                [18.508736, 72.130332],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_7997b550015363a7ff70eb2dce03d778);
+        
+    
+        var popup_a19f5b5b300943ae95aa1f927af03a63 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_cb3fd0c08ee4e67d2973e1f39988d013 = $(`<div id="html_cb3fd0c08ee4e67d2973e1f39988d013" style="width: 100.0%; height: 100.0%;"><b>Observed slick candidate: C03</b><br>Top ranked vessel: Sea Pearl<br>Suspicion score: 59/100<br>Evidence: closest AIS point is 1.46 km away; vessel type: Fishing</div>`)[0];
+                popup_a19f5b5b300943ae95aa1f927af03a63.setContent(html_cb3fd0c08ee4e67d2973e1f39988d013);
+            
+        
+
+        circle_marker_e690eaf242b5eddbc2ff67b622cfdb12.bindPopup(popup_a19f5b5b300943ae95aa1f927af03a63)
+        ;
+
+        
+    
+    
+            circle_marker_e690eaf242b5eddbc2ff67b622cfdb12.bindTooltip(
+                `<div>
+                     Observed candidate C03
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5a3c047ae91382f08ba38b313dc6141b = L.circleMarker(
+                [18.512157, 72.299163],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_7997b550015363a7ff70eb2dce03d778);
+        
+    
+        var popup_6402b40f5396f0a7d494c4101d9a0335 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_127da68ce32e233a8f8387a251c8973c = $(`<div id="html_127da68ce32e233a8f8387a251c8973c" style="width: 100.0%; height: 100.0%;"><b>Observed slick candidate: C02</b><br>Top ranked vessel: MV Ocean Guardian<br>Suspicion score: 79/100<br>Evidence: closest AIS point is 10.59 km away; vessel type: Tanker; AIS gap/anomaly flagged</div>`)[0];
+                popup_6402b40f5396f0a7d494c4101d9a0335.setContent(html_127da68ce32e233a8f8387a251c8973c);
+            
+        
+
+        circle_marker_5a3c047ae91382f08ba38b313dc6141b.bindPopup(popup_6402b40f5396f0a7d494c4101d9a0335)
+        ;
+
+        
+    
+    
+            circle_marker_5a3c047ae91382f08ba38b313dc6141b.bindTooltip(
+                `<div>
+                     Observed candidate C02
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_2d8d03bc48723c2256b29d7141024e53 = L.polyline(
+                [[18.437888, 72.319795], [18.414997, 72.343927]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": "6, 8", "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_7997b550015363a7ff70eb2dce03d778);
+        
+    
+            poly_line_2d8d03bc48723c2256b29d7141024e53.bindTooltip(
+                `<div>
+                     Reverse-drift path for C04
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_55853b59fc342c8e4d1ff655adc79d11 = L.circleMarker(
+                [18.437888, 72.319795],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_7997b550015363a7ff70eb2dce03d778);
+        
+    
+            circle_marker_55853b59fc342c8e4d1ff655adc79d11.bindTooltip(
+                `<div>
+                     Estimated origin for C04
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_40fcdec6ba3723f9aa8f2ba49e8d8eb3 = L.polyline(
+                [[18.657302, 72.427827], [18.634411, 72.45199]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": "6, 8", "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_7997b550015363a7ff70eb2dce03d778);
+        
+    
+            poly_line_40fcdec6ba3723f9aa8f2ba49e8d8eb3.bindTooltip(
+                `<div>
+                     Reverse-drift path for C01
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_417f3099de316b5dcfeabfa13c2d42cf = L.circleMarker(
+                [18.657302, 72.427827],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_7997b550015363a7ff70eb2dce03d778);
+        
+    
+            circle_marker_417f3099de316b5dcfeabfa13c2d42cf.bindTooltip(
+                `<div>
+                     Estimated origin for C01
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_76690df9c49dfa895ba8e727e2426fb7 = L.polyline(
+                [[18.426758, 72.332283], [18.403867, 72.356413]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": "6, 8", "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_7997b550015363a7ff70eb2dce03d778);
+        
+    
+            poly_line_76690df9c49dfa895ba8e727e2426fb7.bindTooltip(
+                `<div>
+                     Reverse-drift path for C05
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_513de234f87a88b670cc99e0cf0b7140 = L.circleMarker(
+                [18.426758, 72.332283],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_7997b550015363a7ff70eb2dce03d778);
+        
+    
+            circle_marker_513de234f87a88b670cc99e0cf0b7140.bindTooltip(
+                `<div>
+                     Estimated origin for C05
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_093ce3e950d9eb03a529ed58a9834ac2 = L.polyline(
+                [[18.531627, 72.106187], [18.508736, 72.130332]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": "6, 8", "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_7997b550015363a7ff70eb2dce03d778);
+        
+    
+            poly_line_093ce3e950d9eb03a529ed58a9834ac2.bindTooltip(
+                `<div>
+                     Reverse-drift path for C03
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1b0b39e844cc1dfe68b51a4f8da44475 = L.circleMarker(
+                [18.531627, 72.106187],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_7997b550015363a7ff70eb2dce03d778);
+        
+    
+            circle_marker_1b0b39e844cc1dfe68b51a4f8da44475.bindTooltip(
+                `<div>
+                     Estimated origin for C03
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_f73fb2f3a3a178696dd9551e496e937e = L.polyline(
+                [[18.535048, 72.275018], [18.512157, 72.299163]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": "6, 8", "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_7997b550015363a7ff70eb2dce03d778);
+        
+    
+            poly_line_f73fb2f3a3a178696dd9551e496e937e.bindTooltip(
+                `<div>
+                     Reverse-drift path for C02
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_52c3022ba6393daf45d2f67a0a5feb27 = L.circleMarker(
+                [18.535048, 72.275018],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_7997b550015363a7ff70eb2dce03d778);
+        
+    
+            circle_marker_52c3022ba6393daf45d2f67a0a5feb27.bindTooltip(
+                `<div>
+                     Estimated origin for C02
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_e65088033e9659b4d2dd41eaff966dd3 = L.polyline(
+                [[18.43, 72.35], [18.416, 72.3445], [18.395, 72.33]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_7997b550015363a7ff70eb2dce03d778);
+        
+    
+            poly_line_e65088033e9659b4d2dd41eaff966dd3.bindTooltip(
+                `<div>
+                     MV Ocean Guardian (Tanker) — demo AIS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d35c9410e04824c6ae92d689579b2678 = L.marker(
+                [18.395, 72.33],
+                {
+}
+            ).addTo(map_7997b550015363a7ff70eb2dce03d778);
+        
+    
+            var icon_8785de62431118ce8af03abd7eae669f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_58a25b12e7b5651ef6a388b1066d6749 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e3e1343e5e795bb774b208858d121801 = $(`<div id="html_e3e1343e5e795bb774b208858d121801" style="width: 100.0%; height: 100.0%;">MV Ocean Guardian — demo AIS track</div>`)[0];
+                popup_58a25b12e7b5651ef6a388b1066d6749.setContent(html_e3e1343e5e795bb774b208858d121801);
+            
+        
+
+        marker_d35c9410e04824c6ae92d689579b2678.bindPopup(popup_58a25b12e7b5651ef6a388b1066d6749)
+        ;
+
+        
+    
+    
+                marker_d35c9410e04824c6ae92d689579b2678.setIcon(icon_8785de62431118ce8af03abd7eae669f);
+            
+    
+            var poly_line_d2a900f87a3ea4faff1781c013408d57 = L.polyline(
+                [[18.67, 72.48], [18.62, 72.44]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_7997b550015363a7ff70eb2dce03d778);
+        
+    
+            poly_line_d2a900f87a3ea4faff1781c013408d57.bindTooltip(
+                `<div>
+                     MV Blue Horizon (Cargo) — demo AIS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1817f8dcc4f421e8260028f77e453eff = L.marker(
+                [18.62, 72.44],
+                {
+}
+            ).addTo(map_7997b550015363a7ff70eb2dce03d778);
+        
+    
+            var icon_9c3d4c110294239f16fb1b52b2e1da21 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_39428d3d2be53fbc0dee15a4e876d83e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8c8b6494d41a39e9a95e9e9966c14827 = $(`<div id="html_8c8b6494d41a39e9a95e9e9966c14827" style="width: 100.0%; height: 100.0%;">MV Blue Horizon — demo AIS track</div>`)[0];
+                popup_39428d3d2be53fbc0dee15a4e876d83e.setContent(html_8c8b6494d41a39e9a95e9e9966c14827);
+            
+        
+
+        marker_1817f8dcc4f421e8260028f77e453eff.bindPopup(popup_39428d3d2be53fbc0dee15a4e876d83e)
+        ;
+
+        
+    
+    
+                marker_1817f8dcc4f421e8260028f77e453eff.setIcon(icon_9c3d4c110294239f16fb1b52b2e1da21);
+            
+    
+            var poly_line_f72ead3db55a9187b754367f42b27696 = L.polyline(
+                [[18.535, 72.15], [18.5, 72.12]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_7997b550015363a7ff70eb2dce03d778);
+        
+    
+            poly_line_f72ead3db55a9187b754367f42b27696.bindTooltip(
+                `<div>
+                     Sea Pearl (Fishing) — demo AIS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_66a7cb598288fbd18ef6d8669bed19a3 = L.marker(
+                [18.5, 72.12],
+                {
+}
+            ).addTo(map_7997b550015363a7ff70eb2dce03d778);
+        
+    
+            var icon_2813b2d711325171952c9ba362d3dd10 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b9e8240e9c64b32e89f542fbfbc9481e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b41e8f9be873cc08d26045a15f6d8253 = $(`<div id="html_b41e8f9be873cc08d26045a15f6d8253" style="width: 100.0%; height: 100.0%;">Sea Pearl — demo AIS track</div>`)[0];
+                popup_b9e8240e9c64b32e89f542fbfbc9481e.setContent(html_b41e8f9be873cc08d26045a15f6d8253);
+            
+        
+
+        marker_66a7cb598288fbd18ef6d8669bed19a3.bindPopup(popup_b9e8240e9c64b32e89f542fbfbc9481e)
+        ;
+
+        
+    
+    
+                marker_66a7cb598288fbd18ef6d8669bed19a3.setIcon(icon_2813b2d711325171952c9ba362d3dd10);
+            
+    
+            var poly_line_9d6e5d6db74506420ac36a8deb7a23a6 = L.polyline(
+                [[18.57, 72.36], [18.59, 72.39]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_7997b550015363a7ff70eb2dce03d778);
+        
+    
+            poly_line_9d6e5d6db74506420ac36a8deb7a23a6.bindTooltip(
+                `<div>
+                     Coastal Trader (Cargo) — demo AIS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ee4483c9435a8bba35e1cdf5dd886b6e = L.marker(
+                [18.59, 72.39],
+                {
+}
+            ).addTo(map_7997b550015363a7ff70eb2dce03d778);
+        
+    
+            var icon_56cf99c0b183383ee22af8bef0359409 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e45968a4e331e72b6d4e35ca9cf0ab4e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_69e89731e60b959681326f3a9613ac9a = $(`<div id="html_69e89731e60b959681326f3a9613ac9a" style="width: 100.0%; height: 100.0%;">Coastal Trader — demo AIS track</div>`)[0];
+                popup_e45968a4e331e72b6d4e35ca9cf0ab4e.setContent(html_69e89731e60b959681326f3a9613ac9a);
+            
+        
+
+        marker_ee4483c9435a8bba35e1cdf5dd886b6e.bindPopup(popup_e45968a4e331e72b6d4e35ca9cf0ab4e)
+        ;
+
+        
+    
+    
+                marker_ee4483c9435a8bba35e1cdf5dd886b6e.setIcon(icon_56cf99c0b183383ee22af8bef0359409);
+            
+</script>
+</html>

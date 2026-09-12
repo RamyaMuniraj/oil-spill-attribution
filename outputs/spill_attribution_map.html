@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e44266c76651aa8f9facf4940f668b6b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e44266c76651aa8f9facf4940f668b6b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e44266c76651aa8f9facf4940f668b6b = L.map(
+                "map_e44266c76651aa8f9facf4940f668b6b",
+                {
+                    center: [18.4948336, 72.31636499999999],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f48d8b1ab51b0ee198a68251c5982d62 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f48d8b1ab51b0ee198a68251c5982d62.addTo(map_e44266c76651aa8f9facf4940f668b6b);
+        
+    
+            var circle_marker_eff01dd36ddeca3687c790879c94f324 = L.circleMarker(
+                [18.414997, 72.343927],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e44266c76651aa8f9facf4940f668b6b);
+        
+    
+        var popup_0a79fbc1eae8b2a7d41f269726755c8f = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_de1523d94e06b6a6ae973c4f89053feb = $(`<div id="html_de1523d94e06b6a6ae973c4f89053feb" style="width: 100.0%; height: 100.0%;"><b>Preliminary candidate: C04</b><br>Area: 69 pixels<br>Top ranked vessel: MV Ocean Guardian<br>Suspicion score: 100/100<br>Closest distance: 0.13 km<br>Evidence: closest AIS point is 0.13 km away; vessel type: Tanker; AIS gap/anomaly flagged</div>`)[0];
+                popup_0a79fbc1eae8b2a7d41f269726755c8f.setContent(html_de1523d94e06b6a6ae973c4f89053feb);
+            
+        
+
+        circle_marker_eff01dd36ddeca3687c790879c94f324.bindPopup(popup_0a79fbc1eae8b2a7d41f269726755c8f)
+        ;
+
+        
+    
+    
+            circle_marker_eff01dd36ddeca3687c790879c94f324.bindTooltip(
+                `<div>
+                     Candidate C04
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a38d0b81514e294a7c6f8549f4488f5e = L.circleMarker(
+                [18.634411, 72.45199],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e44266c76651aa8f9facf4940f668b6b);
+        
+    
+        var popup_1cbca6d47be525e4e728292306b24baf = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_259fbb90b24fd07a67be6eafd76130f8 = $(`<div id="html_259fbb90b24fd07a67be6eafd76130f8" style="width: 100.0%; height: 100.0%;"><b>Preliminary candidate: C01</b><br>Area: 54 pixels<br>Top ranked vessel: MV Blue Horizon<br>Suspicion score: 64/100<br>Closest distance: 2.04 km<br>Evidence: closest AIS point is 2.04 km away; vessel type: Cargo</div>`)[0];
+                popup_1cbca6d47be525e4e728292306b24baf.setContent(html_259fbb90b24fd07a67be6eafd76130f8);
+            
+        
+
+        circle_marker_a38d0b81514e294a7c6f8549f4488f5e.bindPopup(popup_1cbca6d47be525e4e728292306b24baf)
+        ;
+
+        
+    
+    
+            circle_marker_a38d0b81514e294a7c6f8549f4488f5e.bindTooltip(
+                `<div>
+                     Candidate C01
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c1ab5247fb55acbff8395062029c09c9 = L.circleMarker(
+                [18.403867, 72.356413],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e44266c76651aa8f9facf4940f668b6b);
+        
+    
+        var popup_06e24537d26ab7be1fedf03ed0b00bd2 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_9b9ca1d9af55b05190ca3b7f2af010ae = $(`<div id="html_9b9ca1d9af55b05190ca3b7f2af010ae" style="width: 100.0%; height: 100.0%;"><b>Preliminary candidate: C05</b><br>Area: 52 pixels<br>Top ranked vessel: MV Ocean Guardian<br>Suspicion score: 96/100<br>Closest distance: 1.84 km<br>Evidence: closest AIS point is 1.84 km away; vessel type: Tanker; AIS gap/anomaly flagged</div>`)[0];
+                popup_06e24537d26ab7be1fedf03ed0b00bd2.setContent(html_9b9ca1d9af55b05190ca3b7f2af010ae);
+            
+        
+
+        circle_marker_c1ab5247fb55acbff8395062029c09c9.bindPopup(popup_06e24537d26ab7be1fedf03ed0b00bd2)
+        ;
+
+        
+    
+    
+            circle_marker_c1ab5247fb55acbff8395062029c09c9.bindTooltip(
+                `<div>
+                     Candidate C05
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_07d52b6cec6f827f92df5d5901d07987 = L.circleMarker(
+                [18.508736, 72.130332],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e44266c76651aa8f9facf4940f668b6b);
+        
+    
+        var popup_f8f3881cc2486977dfdb5c1f58057891 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_b10e2e423b34b1ca936770b71eae7935 = $(`<div id="html_b10e2e423b34b1ca936770b71eae7935" style="width: 100.0%; height: 100.0%;"><b>Preliminary candidate: C03</b><br>Area: 51 pixels<br>Top ranked vessel: Sea Pearl<br>Suspicion score: 59/100<br>Closest distance: 1.46 km<br>Evidence: closest AIS point is 1.46 km away; vessel type: Fishing</div>`)[0];
+                popup_f8f3881cc2486977dfdb5c1f58057891.setContent(html_b10e2e423b34b1ca936770b71eae7935);
+            
+        
+
+        circle_marker_07d52b6cec6f827f92df5d5901d07987.bindPopup(popup_f8f3881cc2486977dfdb5c1f58057891)
+        ;
+
+        
+    
+    
+            circle_marker_07d52b6cec6f827f92df5d5901d07987.bindTooltip(
+                `<div>
+                     Candidate C03
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_929e5f60cdd48683b2892b8fa6d82c58 = L.circleMarker(
+                [18.512157, 72.299163],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e44266c76651aa8f9facf4940f668b6b);
+        
+    
+        var popup_00091db1b61bb07276018614fefffaef = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_ce243732622fd5340de296b4602c7eec = $(`<div id="html_ce243732622fd5340de296b4602c7eec" style="width: 100.0%; height: 100.0%;"><b>Preliminary candidate: C02</b><br>Area: 51 pixels<br>Top ranked vessel: MV Ocean Guardian<br>Suspicion score: 79/100<br>Closest distance: 10.59 km<br>Evidence: closest AIS point is 10.59 km away; vessel type: Tanker; AIS gap/anomaly flagged</div>`)[0];
+                popup_00091db1b61bb07276018614fefffaef.setContent(html_ce243732622fd5340de296b4602c7eec);
+            
+        
+
+        circle_marker_929e5f60cdd48683b2892b8fa6d82c58.bindPopup(popup_00091db1b61bb07276018614fefffaef)
+        ;
+
+        
+    
+    
+            circle_marker_929e5f60cdd48683b2892b8fa6d82c58.bindTooltip(
+                `<div>
+                     Candidate C02
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_03d0218f7d1a40900c2320d7390a9968 = L.polyline(
+                [[18.43, 72.35], [18.416, 72.3445], [18.395, 72.33]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e44266c76651aa8f9facf4940f668b6b);
+        
+    
+            poly_line_03d0218f7d1a40900c2320d7390a9968.bindTooltip(
+                `<div>
+                     MV Ocean Guardian (Tanker)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0101fc3231f3518048fd95de921ff288 = L.marker(
+                [18.395, 72.33],
+                {
+}
+            ).addTo(map_e44266c76651aa8f9facf4940f668b6b);
+        
+    
+            var icon_b0f9e6af699bf189796da667c1e701ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_37169f14ae0967a45092095f6746671c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8a3b24ecd7d9e7d72d628843d57ddf9 = $(`<div id="html_b8a3b24ecd7d9e7d72d628843d57ddf9" style="width: 100.0%; height: 100.0%;">MV Ocean Guardian — demo AIS track</div>`)[0];
+                popup_37169f14ae0967a45092095f6746671c.setContent(html_b8a3b24ecd7d9e7d72d628843d57ddf9);
+            
+        
+
+        marker_0101fc3231f3518048fd95de921ff288.bindPopup(popup_37169f14ae0967a45092095f6746671c)
+        ;
+
+        
+    
+    
+                marker_0101fc3231f3518048fd95de921ff288.setIcon(icon_b0f9e6af699bf189796da667c1e701ba);
+            
+    
+            var poly_line_57894be773c12893a8f1630d8043631b = L.polyline(
+                [[18.67, 72.48], [18.62, 72.44]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e44266c76651aa8f9facf4940f668b6b);
+        
+    
+            poly_line_57894be773c12893a8f1630d8043631b.bindTooltip(
+                `<div>
+                     MV Blue Horizon (Cargo)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_edee981498b809790e1e46f97c1dd6e2 = L.marker(
+                [18.62, 72.44],
+                {
+}
+            ).addTo(map_e44266c76651aa8f9facf4940f668b6b);
+        
+    
+            var icon_8905658859fbe4f94426141c81d787a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0be4b9517c7520a185f6b0920d3cad57 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_72edfc42aba3d37fc135393e4bd85d31 = $(`<div id="html_72edfc42aba3d37fc135393e4bd85d31" style="width: 100.0%; height: 100.0%;">MV Blue Horizon — demo AIS track</div>`)[0];
+                popup_0be4b9517c7520a185f6b0920d3cad57.setContent(html_72edfc42aba3d37fc135393e4bd85d31);
+            
+        
+
+        marker_edee981498b809790e1e46f97c1dd6e2.bindPopup(popup_0be4b9517c7520a185f6b0920d3cad57)
+        ;
+
+        
+    
+    
+                marker_edee981498b809790e1e46f97c1dd6e2.setIcon(icon_8905658859fbe4f94426141c81d787a6);
+            
+    
+            var poly_line_23a1ef8a5f429f847fd66c6322003799 = L.polyline(
+                [[18.535, 72.15], [18.5, 72.12]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e44266c76651aa8f9facf4940f668b6b);
+        
+    
+            poly_line_23a1ef8a5f429f847fd66c6322003799.bindTooltip(
+                `<div>
+                     Sea Pearl (Fishing)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0f8e61970e2c3c3dd1be72bd628267e0 = L.marker(
+                [18.5, 72.12],
+                {
+}
+            ).addTo(map_e44266c76651aa8f9facf4940f668b6b);
+        
+    
+            var icon_e6b93425a7f775833edc0714ae791319 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_101d7aaf444ca5540b4b6041d9211ab4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96ab254624da343a82c9c043d90ddff5 = $(`<div id="html_96ab254624da343a82c9c043d90ddff5" style="width: 100.0%; height: 100.0%;">Sea Pearl — demo AIS track</div>`)[0];
+                popup_101d7aaf444ca5540b4b6041d9211ab4.setContent(html_96ab254624da343a82c9c043d90ddff5);
+            
+        
+
+        marker_0f8e61970e2c3c3dd1be72bd628267e0.bindPopup(popup_101d7aaf444ca5540b4b6041d9211ab4)
+        ;
+
+        
+    
+    
+                marker_0f8e61970e2c3c3dd1be72bd628267e0.setIcon(icon_e6b93425a7f775833edc0714ae791319);
+            
+    
+            var poly_line_a20df64b5690ac365545a2b8c70c91ec = L.polyline(
+                [[18.57, 72.36], [18.59, 72.39]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e44266c76651aa8f9facf4940f668b6b);
+        
+    
+            poly_line_a20df64b5690ac365545a2b8c70c91ec.bindTooltip(
+                `<div>
+                     Coastal Trader (Cargo)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d20567be6a04c682dbfffc66d62123eb = L.marker(
+                [18.59, 72.39],
+                {
+}
+            ).addTo(map_e44266c76651aa8f9facf4940f668b6b);
+        
+    
+            var icon_7187666a8d51c2440d66d15c02a3fab0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f3a4f5b484a9be0722419adc5836b580 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a3754209835c5137ecaa354d982df18e = $(`<div id="html_a3754209835c5137ecaa354d982df18e" style="width: 100.0%; height: 100.0%;">Coastal Trader — demo AIS track</div>`)[0];
+                popup_f3a4f5b484a9be0722419adc5836b580.setContent(html_a3754209835c5137ecaa354d982df18e);
+            
+        
+
+        marker_d20567be6a04c682dbfffc66d62123eb.bindPopup(popup_f3a4f5b484a9be0722419adc5836b580)
+        ;
+
+        
+    
+    
+                marker_d20567be6a04c682dbfffc66d62123eb.setIcon(icon_7187666a8d51c2440d66d15c02a3fab0);
+            
+</script>
+</html>

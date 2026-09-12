@@ -1,0 +1,21 @@
+candidate_id,vessel_id,vessel_name,distance_to_candidate_km,time_difference_hours,reported_speed_knots,observed_speed_kmh,speed_difference_percent,estimated_bearing_degrees,estimated_movement_distance_km,estimated_position_latitude,estimated_position_longitude,trajectory_distance_to_candidate_km,reverse_drift_score,interpretation
+C01,DEMO-002,MV Blue Horizon,1.45,1.0,12.3,1.16,94.9,217.16,1.16,18.653333,72.466667,2.61,80.0,good trajectory consistency
+C01,DEMO-004,Coastal Trader,10.12,1.0,9.9,0.64,96.49,54.88,0.64,18.576666,72.37,10.76,35.0,weak trajectory consistency
+C01,DEMO-001,MV Ocean Guardian,26.8,0.0,4.1,0.83,89.06,200.44,0.0,18.416,72.3445,26.8,10.0,low trajectory consistency
+C01,DEMO-003,Sea Pearl,35.87,1.0,7.1,0.85,93.53,218.32,0.85,18.523,72.14,35.14,10.0,low trajectory consistency
+C02,DEMO-001,MV Ocean Guardian,11.71,0.0,4.1,0.83,89.06,200.44,0.0,18.416,72.3445,11.71,35.0,weak trajectory consistency
+C02,DEMO-003,Sea Pearl,17.32,1.0,7.1,0.85,93.53,218.32,0.85,18.523,72.14,16.83,35.0,weak trajectory consistency
+C02,DEMO-004,Coastal Trader,10.99,1.0,9.9,0.64,96.49,54.88,0.64,18.576666,72.37,10.35,35.0,weak trajectory consistency
+C02,DEMO-002,MV Blue Horizon,22.49,1.0,12.3,1.16,94.9,217.16,1.16,18.653333,72.466667,23.62,10.0,low trajectory consistency
+C03,DEMO-003,Sea Pearl,1.04,1.0,7.1,0.85,93.53,218.32,0.85,18.523,72.14,1.89,100.0,strong trajectory consistency
+C03,DEMO-001,MV Ocean Guardian,24.83,0.0,4.1,0.83,89.06,200.44,0.0,18.416,72.3445,24.83,10.0,low trajectory consistency
+C03,DEMO-002,MV Blue Horizon,37.91,1.0,12.3,1.16,94.9,217.16,1.16,18.653333,72.466667,38.93,10.0,low trajectory consistency
+C03,DEMO-004,Coastal Trader,26.98,1.0,9.9,0.64,96.49,54.88,0.64,18.576666,72.37,26.37,10.0,low trajectory consistency
+C04,DEMO-001,MV Ocean Guardian,0.13,0.0,4.1,0.83,89.06,200.44,0.0,18.416,72.3445,0.13,100.0,strong trajectory consistency
+C04,DEMO-004,Coastal Trader,18.64,1.0,9.9,0.64,96.49,54.88,0.64,18.576666,72.37,18.19,35.0,weak trajectory consistency
+C04,DEMO-002,MV Blue Horizon,28.35,1.0,12.3,1.16,94.9,217.16,1.16,18.653333,72.466667,29.49,10.0,low trajectory consistency
+C04,DEMO-003,Sea Pearl,24.78,1.0,7.1,0.85,93.53,218.32,0.85,18.523,72.14,24.63,10.0,low trajectory consistency
+C05,DEMO-001,MV Ocean Guardian,1.84,0.0,4.1,0.83,89.06,200.44,0.0,18.416,72.3445,1.84,100.0,strong trajectory consistency
+C05,DEMO-004,Coastal Trader,19.68,1.0,9.9,0.64,96.49,54.88,0.64,18.576666,72.37,19.27,35.0,weak trajectory consistency
+C05,DEMO-002,MV Blue Horizon,28.95,1.0,12.3,1.16,94.9,217.16,1.16,18.653333,72.466667,30.08,10.0,low trajectory consistency
+C05,DEMO-003,Sea Pearl,26.53,1.0,7.1,0.85,93.53,218.32,0.85,18.523,72.14,26.39,10.0,low trajectory consistency

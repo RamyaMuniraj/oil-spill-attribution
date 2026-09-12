@@ -1,0 +1,2 @@
+sar_candidates_detected,average_candidate_area_pixels,candidates_after_filtering,candidates_retained,candidates_review_required,retention_rate_percent,candidates_with_vessel_ranking,average_top_vessel_score,highest_vessel_score,high_confidence_cases,medium_confidence_cases,low_confidence_cases,insufficient_evidence_cases,reverse_drift_cases,average_reverse_drift_score,strong_trajectory_cases,good_trajectory_cases,moderate_trajectory_cases,weak_or_low_trajectory_cases
+5,55.4,5,5,0,100.0,5,83.6,100,2,3,0,0,20,34.5,3,1,0,16
